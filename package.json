@@ -1,0 +1,21 @@
+{
+  "name": "crossfit-wod-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Carlos Azaustre <cazaustre@gmail.com> (https://youtube.com/carlosazaustre)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  }
+}
