@@ -1,30 +1,6 @@
 {
   "workouts": [
     {
-      "id": "61dbae02-c147-4e28-863c-db7bd402b2d6",
-      "name": "Tommy V",
-      "mode": "For Time",
-      "equipment": [
-        "barbell",
-        "rope"
-      ],
-      "exercises": [
-        "21 thrusters",
-        "12 rope climbs, 15 ft",
-        "15 thrusters",
-        "9 rope climbs, 15 ft",
-        "9 thrusters",
-        "6 rope climbs, 15 ft"
-      ],
-      "createdAt": "4/20/2022, 2:21:56 PM",
-      "updatedAt": "4/20/2022, 2:21:56 PM",
-      "trainerTips": [
-        "Split the 21 thrusters as needed",
-        "Try to do the 9 and 6 thrusters unbroken",
-        "RX Weights: 115lb/75lb"
-      ]
-    },
-    {
       "id": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
       "name": "Dead Push-Ups",
       "mode": "AMRAP 10",
@@ -65,8 +41,8 @@
       ]
     },
     {
-      "name": "Core Buster",
-      "mode": "AMRAP 20",
+      "name": "Ghostbuster",
+      "mode": "BZRP",
       "equipment": [
         "rack",
         "barbell",
@@ -84,7 +60,7 @@
       ],
       "id": "8e15fce3-fcaa-4eb8-aeec-6be3dd112511",
       "createdAt": "7/19/2022, 8:32:35 PM",
-      "updatedAt": "7/19/2022, 8:32:35 PM"
+      "updatedAt": "8/9/2022, 6:17:55 PM"
     }
   ]
 }
