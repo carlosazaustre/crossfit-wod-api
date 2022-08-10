@@ -1,8 +1,9 @@
 const workoutService = require("../services/workoutService");
 
 const getAllWorkouts = (req, res) => {
+  const { mode } = req.query;
   try {
-    const allWorkouts = workoutService.getAllWorkouts();
+    const allWorkouts = workoutService.getAllWorkouts({ mode });
     res.send({ status: "OK", data: allWorkouts });
   } catch (error) {
     res
@@ -21,7 +22,7 @@ const getOneWorkout = (req, res) => {
       status: "FAILED",
       data: { error: "Parameter ':workoutId' can not be empty" },
     });
-    eturn;
+    return;
   }
 
   try {
