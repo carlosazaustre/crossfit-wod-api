@@ -1,8 +1,18 @@
 const workoutService = require("../services/workoutService");
 
 const getAllWorkouts = (req, res) => {
-  const allWorkouts = workoutService.getAllWorkouts();
-  res.send({ status: "OK", data: allWorkouts });
+	const {
+		query: { equipment }
+	} = req;
+
+	if (equipment) {
+		const workoutsByEquipment = workoutService.getWorkoutsByEquipment(equipment);
+		res.send({ status: "OK", data: workoutsByEquipment });
+	}
+	else {
+		const allWorkouts = workoutService.getAllWorkouts();
+		res.send({ status: "OK", data: allWorkouts });
+	}
 };
 
 const getOneWorkout = (req, res) => {
