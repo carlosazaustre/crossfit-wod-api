@@ -19,6 +19,11 @@ const getOneWorkout = (workoutId) => {
   }
 };
 
+const getWorkoutsByEquipment = (equipment) => {
+	const workoutsByEquipment = Workout.getWorkoutsByEquipment(equipment);
+	return workoutsByEquipment;
+}
+
 const createNewWorkout = (newWorkout) => {
   const workoutToInsert = {
     ...newWorkout,
@@ -54,6 +59,7 @@ const deleteOneWorkout = (workoutId) => {
 module.exports = {
   getAllWorkouts,
   getOneWorkout,
+	getWorkoutsByEquipment,
   createNewWorkout,
   updateOneWorkout,
   deleteOneWorkout,

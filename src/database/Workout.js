@@ -70,6 +70,15 @@ const getOneWorkout = (workoutId) => {
   }
 };
 
+const getWorkoutsByEquipment = (equipment) => {
+	const workoutsByEquipment = DB.workouts.filter((workout) => workout.equipment.includes(equipment));
+	if (!workoutsByEquipment) {
+		return;
+	}
+
+	return workoutsByEquipment;
+}
+
 const createNewWorkout = (newWorkout) => {
   try {
     const isAlreadyAdded =
@@ -150,6 +159,7 @@ const deleteOneWorkout = (workoutId) => {
 module.exports = {
   getAllWorkouts,
   getOneWorkout,
+	getWorkoutsByEquipment,
   createNewWorkout,
   updateOneWorkout,
   deleteOneWorkout,
